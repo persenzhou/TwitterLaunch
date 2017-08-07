@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7AF-9o-Hfj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="eu7-80-8lX">
+            <objects>
+                <viewController id="7AF-9o-Hfj" customClass="LaunchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lbh-w7-4Vd"/>
+                        <viewControllerLayoutGuide type="bottom" id="J3p-eG-kou"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8D2-X8-FiH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home.png" translatesAutoresizingMaskIntoConstraints="NO" id="Npl-DE-61e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zzp-Bb-Dn7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.25098039220000001" green="0.52549019610000003" blue="0.80392156859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t43-zl-RTI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Zzp-Bb-Dn7" firstAttribute="top" secondItem="8D2-X8-FiH" secondAttribute="top" id="37V-0w-mCO"/>
+                            <constraint firstItem="t43-zl-RTI" firstAttribute="leading" secondItem="8D2-X8-FiH" secondAttribute="leading" id="4M8-im-Peq"/>
+                            <constraint firstAttribute="trailing" secondItem="t43-zl-RTI" secondAttribute="trailing" id="8ep-If-hsZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Zzp-Bb-Dn7" secondAttribute="trailing" id="Cao-bu-z7c"/>
+                            <constraint firstItem="Npl-DE-61e" firstAttribute="top" secondItem="8D2-X8-FiH" secondAttribute="top" id="Etl-Q4-kut"/>
+                            <constraint firstItem="J3p-eG-kou" firstAttribute="top" secondItem="t43-zl-RTI" secondAttribute="bottom" id="SfJ-lQ-fdq"/>
+                            <constraint firstItem="J3p-eG-kou" firstAttribute="top" secondItem="Zzp-Bb-Dn7" secondAttribute="bottom" id="Uc6-OB-KMb"/>
+                            <constraint firstItem="Npl-DE-61e" firstAttribute="leading" secondItem="8D2-X8-FiH" secondAttribute="leading" id="X1v-yH-viW"/>
+                            <constraint firstItem="J3p-eG-kou" firstAttribute="top" secondItem="Npl-DE-61e" secondAttribute="bottom" id="eKX-Ib-YHM"/>
+                            <constraint firstItem="Zzp-Bb-Dn7" firstAttribute="leading" secondItem="8D2-X8-FiH" secondAttribute="leading" id="iW5-TC-mLd"/>
+                            <constraint firstItem="t43-zl-RTI" firstAttribute="top" secondItem="8D2-X8-FiH" secondAttribute="top" id="mfD-0Y-plt"/>
+                            <constraint firstAttribute="trailing" secondItem="Npl-DE-61e" secondAttribute="trailing" id="vIg-Ts-Msq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="Zzp-Bb-Dn7" id="ehS-zX-3zt"/>
+                        <outlet property="imageView" destination="Npl-DE-61e" id="f4z-E9-kBO"/>
+                        <outlet property="maskView" destination="t43-zl-RTI" id="VxJ-Me-cUh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIj-wi-tRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="2636.1319340329837"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home.png" width="16" height="16"/>
+    </resources>
+</document>
